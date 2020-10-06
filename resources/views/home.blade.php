@@ -60,110 +60,15 @@
 
                 </div>
                 {{-- END CARDS --}}
-
-                {{-- GITHUB INFO --}}
-                    <x-github/>
-                {{-- END GITHUB INFO --}}
-
                 {{-- CHARTS --}}
 
-                <div class="lg:flex mb-4">
+                <div class="lg:flex mb-6">
                     <div class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 hover:shadow-2xl shadow-xl bg-white rounded-lg mx-auto p-6 lg:w-3/5 mb-2">
                         {!! $earnings_chart->container() !!}
                     </div>
-                    <div class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 hover:shadow-2xl shadow-xl bg-white rounded-lg mx-auto p-6 lg:ml-4 lg:w-2/5">
-                        {!! $statics_chart->container() !!}
-                    </div>
+                    
                 </div>
                 {{-- END CHARTS --}}
-
-                {{-- TABLE --}}
-                <div id='recipients' class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 hover:shadow-xl p-8 mt-6 lg:mt-0 rounded shadow-lg bg-white">
-                    <div class="block overflow-x-auto">
-                        <table id="example" class="py-4" style="width:100%;">
-                            <thead>
-                                <tr>
-                                    <th data-priority="1">Name</th>
-                                    <th data-priority="2">Position</th>
-                                    <th data-priority="3">Office</th>
-                                    <th data-priority="4">Age</th>
-                                    <th data-priority="5">Start date</th>
-                                    <th data-priority="6">Salary</th>
-                                </tr>
-                            </thead>
-                            <tbody class="leading-normal">
-                                <tr>
-                                    <td>Tiger Nixon</td>
-                                    <td>System Architect</td>
-                                    <td>Edinburgh</td>
-                                    <td>61</td>
-                                    <td>2011/04/25</td>
-                                    <td>$320,800</td>
-                                </tr>
-                                <tr>
-                                    <td>Garrett Winters</td>
-                                    <td>Accountant</td>
-                                    <td>Tokyo</td>
-                                    <td>63</td>
-                                    <td>2011/07/25</td>
-                                    <td>$170,750</td>
-                                </tr>
-                                <tr>
-                                    <td>Ashton Cox</td>
-                                    <td>Junior Technical Author</td>
-                                    <td>San Francisco</td>
-                                    <td>66</td>
-                                    <td>2009/01/12</td>
-                                    <td>$86,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Cedric Kelly</td>
-                                    <td>Senior Javascript Developer</td>
-                                    <td>Edinburgh</td>
-                                    <td>22</td>
-                                    <td>2012/03/29</td>
-                                    <td>$433,060</td>
-                                </tr>
-                                <tr>
-                                    <td>Airi Satou</td>
-                                    <td>Accountant</td>
-                                    <td>Tokyo</td>
-                                    <td>33</td>
-                                    <td>2008/11/28</td>
-                                    <td>$162,700</td>
-                                </tr>
-                                <tr>
-                                    <td>Brielle Williamson</td>
-                                    <td>Integration Specialist</td>
-                                    <td>New York</td>
-                                    <td>61</td>
-                                    <td>2012/12/02</td>
-                                    <td>$372,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Herrod Chandler</td>
-                                    <td>Sales Assistant</td>
-                                    <td>San Francisco</td>
-                                    <td>59</td>
-                                    <td>2012/08/06</td>
-                                    <td>$137,500</td>
-                                </tr>
-                                <tr>
-                                    <td>Rhona Davidson</td>
-                                    <td>Integration Specialist</td>
-                                    <td>Tokyo</td>
-                                    <td>55</td>
-                                    <td>2010/10/14</td>
-                                    <td>$327,900</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                {{-- END TABLE --}}
-
-                <x-file-uploads/>
-                @livewire('cards')
             </div>
 
             <!-- FOOTER -->
